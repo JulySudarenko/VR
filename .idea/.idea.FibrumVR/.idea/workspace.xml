@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="345d6cf6-fe60-4de3-939c-1675226c7c4b" name="Default Changelist" comment="" />
+    <list default="true" id="345d6cf6-fe60-4de3-939c-1675226c7c4b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FibrumVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FibrumVR/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FibrumVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FibrumVR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Controller/CharController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/CharController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/TimeRemaining.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/TimeRemaining/ITimeRemaining.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/TimeRemaining/ITimeRemaining.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/TimeRemaining/TimeRemaining.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/TimeRemaining/TimeRemaining.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/TimeRemaining/TimeRemainingController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/TimeRemaining/TimeRemainingController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/TimeRemaining/TimeRemainingExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/TimeRemaining/TimeRemainingExtensions.cs.meta" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../!Архив/VR_HW_2/МихаилНикулин/ARVR HomeWork 2 Lesson/Runner/Assets/Scripts/ButtonsScript.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -29,12 +48,12 @@
         <option value="$PROJECT_DIR$/Assets/Code/Controller/StartController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Config.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Controller/GameMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Controller/CharController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Controller/SpiderController.cs" />
         <option value="$PROJECT_DIR$/Assets/EgyptMonsters/Scripts/DealDamageComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/EgyptMonsters/Scripts/DemoController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Controller/EndGameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Controller/LevelGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Controller/CharController.cs" />
       </list>
     </option>
   </component>

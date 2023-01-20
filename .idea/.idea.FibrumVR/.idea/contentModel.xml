@@ -43,12 +43,6 @@
             <e p="Spider.cs" t="Include" />
             <e p="TriggerHit.cs" t="Include" />
           </e>
-          <e p="TimeRemaining" t="Include">
-            <e p="ITimeRemaining.cs" t="Include" />
-            <e p="TimeRemaining.cs" t="Include" />
-            <e p="TimeRemainingController.cs" t="Include" />
-            <e p="TimeRemainingExtensions.cs" t="Include" />
-          </e>
           <e p="UserInput" t="Include">
             <e p="IUserInput.cs" t="Include" />
             <e p="UserInputHandling.cs" t="Include" />

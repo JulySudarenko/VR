@@ -69,6 +69,8 @@ namespace Code.Controller
                 dir.x = _player.Transform.rotation.eulerAngles.z * -1 * Time.deltaTime * _config.SideSpeedVR;
             }
 
+            dir.x = Input.GetAxis("Horizontal") * _config.SideSpeedVR;
+
             dir.z = _config.Speed;
 
             _player.Rigidbody.velocity = dir;
@@ -76,12 +78,6 @@ namespace Code.Controller
 
         private void MouseControl()
         {
-            // if (!_vrChecker.IsVR)
-            // {
-            //     dir.x = Input.GetAxis("Horizontal") * _config.SideSpeedVR;
-            // }
-            // else
-            // {
             Vector3 dir = _player.Rigidbody.velocity;
             if (_isMouseButtonDown)
             {
