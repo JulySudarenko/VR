@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Sudar1977\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Sudar1977\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_FibrumVR.952665689.00" t="ExcludeRecursive" />
+    <e p="D:\geekbrains.ru\Projects\Unity\FibrumVR" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Code" t="Include">
+          <e p="Assistant.cs" t="Include" />
+          <e p="Config.cs" t="Include" />
+          <e p="Controller" t="Include">
+            <e p="CharController.cs" t="Include" />
+            <e p="Controllers.cs" t="Include" />
+            <e p="EndGameController.cs" t="Include" />
+            <e p="GameMenu.cs" t="Include" />
+            <e p="IEndGame.cs" t="Include" />
+            <e p="InputController.cs" t="Include" />
+            <e p="IVRChecker.cs" t="Include" />
+            <e p="LevelGenerator.cs" t="Include" />
+            <e p="ObstacleKiller.cs" t="Include" />
+            <e p="ObstacleSpawner.cs" t="Include" />
+            <e p="SpiderController.cs" t="Include" />
+            <e p="StartController.cs" t="Include" />
+            <e p="ViewController.cs" t="Include" />
+            <e p="VRChecker.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="ICleanup.cs" t="Include" />
+            <e p="IController.cs" t="Include" />
+            <e p="IExecute.cs" t="Include" />
+            <e p="IFixedExecute.cs" t="Include" />
+            <e p="IInitialize.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="IFactory.cs" t="Include" />
+            <e p="IHit.cs" t="Include" />
+            <e p="IPlayer.cs" t="Include" />
+            <e p="ISpider.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="PlayerFactory.cs" t="Include" />
+            <e p="Spider.cs" t="Include" />
+            <e p="TriggerHit.cs" t="Include" />
+          </e>
+          <e p="TimeRemaining" t="Include">
+            <e p="ITimeRemaining.cs" t="Include" />
+            <e p="TimeRemaining.cs" t="Include" />
+            <e p="TimeRemainingController.cs" t="Include" />
+            <e p="TimeRemainingExtensions.cs" t="Include" />
+          </e>
+          <e p="UserInput" t="Include">
+            <e p="IUserInput.cs" t="Include" />
+            <e p="UserInputHandling.cs" t="Include" />
+          </e>
+          <e p="View" t="Include">
+            <e p="GameView.cs" t="Include" />
+            <e p="MenuView.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Editor" t="Include">
+          <e p="FibrumEditor.cs" t="Include" />
+          <e p="FibrumPhoneStartInspector.cs" t="Include" />
+          <e p="VRCameraInspector.cs" t="Include" />
+        </e>
+        <e p="EgyptMonsters" t="Include">
+          <e p="Demo" t="Include">
+            <e p="DemoAssets" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="GrassAnimate.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="README.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="DealDamageComponent.cs" t="Include" />
+            <e p="DemoController.cs" t="Include" />
+            <e p="DestroyMe.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Fibrum" t="Include">
+          <e p="ChangeCameraEye.cs" t="Include" />
+          <e p="Console.cs" t="Include" />
+          <e p="DisplayMetricsAndroid.cs" t="Include" />
+          <e p="FibrumController.cs" t="Include" />
+          <e p="FibrumInput.cs" t="Include" />
+          <e p="Joystick" t="Include">
+            <e p="JoystickSetup.cs" t="Include" />
+            <e p="JoystickSetupParameters.cs" t="Include" />
+          </e>
+          <e p="LensCorrection" t="Include">
+            <e p="LensCorrection.shader" t="Include" />
+            <e p="NewLensCorrection.cs" t="Include" />
+          </e>
+          <e p="Mobile Transparent Vertex Color.shader" t="Include" />
+          <e p="SetupUI" t="Include">
+            <e p="DisplayModePanelScript.cs" t="Include" />
+            <e p="FibUIAppearScript.cs" t="Include" />
+          </e>
+          <e p="UIpointer" t="Include">
+            <e p="VR_UIpointer.cs" t="Include" />
+          </e>
+          <e p="VR_GUI" t="Include">
+            <e p="MaskedCutOutTex.shader" t="Include" />
+            <e p="VR_canvas.cs" t="Include" />
+            <e p="VR_canvasUIcontroller.cs" t="Include" />
+            <e p="VRInputModule.cs" t="Include" />
+          </e>
+          <e p="VRCalibration.cs" t="Include" />
+          <e p="VRCamera.cs" t="Include" />
+          <e p="VRSensor.cs" t="Include" />
+          <e p="VRSetupGUI.cs" t="Include" />
+        </e>
+        <e p="FibrumLoader" t="Include">
+          <e p="FibrumPhoneStart.cs" t="Include" />
+          <e p="GameDisplayScript.cs" t="Include" />
+          <e p="SceneAnims" t="Include">
+            <e p="Main_Camera_GameDisplayScript_t.cs" t="Include" />
+            <e p="Main_Camera_GameDisplayScript_texT.cs" t="Include" />
+            <e p="Main_Camera_Transform_localPosition.cs" t="Include" />
+            <e p="Main_Camera_Transform_localRotation.cs" t="Include" />
+            <e p="phone_Renderer_enabled.cs" t="Include" />
+            <e p="phone_Transform_localPosition.cs" t="Include" />
+            <e p="phone_Transform_localRotation.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Scenes" t="Include">
+          <e p="demoMaterials" t="Include">
+            <e p="GUIuserScript.cs" t="Include" />
+            <e p="JoystickSetupDemo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="FibrumVR.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
