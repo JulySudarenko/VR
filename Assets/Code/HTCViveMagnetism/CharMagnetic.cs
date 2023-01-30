@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
-using Random = System.Random;
+
 
 namespace Code.HTCViveMagnetism
 {
@@ -42,15 +40,15 @@ namespace Code.HTCViveMagnetism
         {
             ParticleSystem ps = Instantiate(_hlReference, trans, false);
 
-            if (isBlue)
+            if (ps == null)
             {
-                ps.GetComponent<Renderer>().material = _blueMat;
-            }
-            else
-            {
-                ps.GetComponent<Renderer>().material = _redMat;
+                ps = Instantiate(_hlReference, trans, false);
             }
 
+            Renderer psRenderer = ps.GetComponent<Renderer>();
+
+            psRenderer.material = isBlue ? _blueMat : _redMat;
+            
             _magneticSpell.highLight.Add(ps);
         }
 

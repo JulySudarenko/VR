@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="345d6cf6-fe60-4de3-939c-1675226c7c4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FibrumVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FibrumVR/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FibrumVR/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FibrumVR/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FibrumVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FibrumVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/HTCViveMagnetism/Centering.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/HTCViveMagnetism/Centering.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/HTCViveMagnetism/MyTeleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/HTCViveMagnetism/MyTeleport.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fibrum/Textures/Materials/Material 5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fibrum/Textures/Materials/Material 5.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fibrum/Textures/Materials/Material.001.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fibrum/Textures/Materials/Material.001.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fibrum/Textures/Materials/Material.5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fibrum/Textures/Materials/Material.5.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/Teleportable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/Teleportable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Blue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Red.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Yellow.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MyScenes/MagnitizmVive.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MyScenes/MagnitizmVive.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/HTCViveMagnetism/CharMagnetic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/HTCViveMagnetism/CharMagnetic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/OpenVRUnityXRPackage.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +65,11 @@
         <option value="$PROJECT_DIR$/Assets/Code/Controller/MyTeleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/HTCViveMagnetizm/MyTeleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/HTCViveMagnetism/Centering.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/HTCViveMagnetism/CharMagnetic.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/HTCViveMagnetism/MagneticRaycaster.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/HTCViveMagnetism/TrackPadScroller.cs" />
         <option value="$PROJECT_DIR$/Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/Teleportable.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/HTCViveMagnetism/MyTeleport.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/HTCViveMagnetism/CharMagnetic.cs" />
       </list>
     </option>
   </component>
@@ -107,6 +112,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
