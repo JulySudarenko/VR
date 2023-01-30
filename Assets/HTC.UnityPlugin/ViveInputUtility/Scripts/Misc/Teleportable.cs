@@ -345,7 +345,7 @@ namespace HTC.UnityPlugin.Vive
             }
         }
 #else
-        public IEnumerator StartTeleport(RaycastResult hitResult, Vector3 position, Quaternion rotation, float delay)
+        public virtual IEnumerator StartTeleport(RaycastResult hitResult, Vector3 position, Quaternion rotation, float delay)
         {
             if (delay > 0) { yield return new WaitForSeconds(delay); }
 

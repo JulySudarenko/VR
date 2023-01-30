@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Code.HTCViveMagnetism
 {
@@ -13,6 +16,7 @@ namespace Code.HTCViveMagnetism
         {
             _myCol = GetComponent<CapsuleCollider>();
         }
+
         private void Start()
         {
             FindTeleportPivotAndTarget();
@@ -26,17 +30,26 @@ namespace Code.HTCViveMagnetism
 
             _myCol.center = _vector;
         }
-            
+
 
         private void FindTeleportPivotAndTarget()
         {
             foreach (var camera in Camera.allCameras)
             {
-                if(!camera.enabled) {continue;}
-                if(camera.stereoTargetEye != StereoTargetEyeMask.Both) {continue;}
+                if (!camera.enabled)
+                {
+                    continue;
+                }
+
+                if (camera.stereoTargetEye != StereoTargetEyeMask.Both)
+                {
+                    continue;
+                }
 
                 _pivot = camera.transform;
             }
         }
     }
+
+
 }
