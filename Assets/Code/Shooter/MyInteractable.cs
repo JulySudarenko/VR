@@ -73,224 +73,224 @@ namespace Code.Shooter
             // "Catch" the throwable by holding down the interaction button instead of pressing it.
             // Only do this if the throwable is moving faster than the prescribed threshold speed,
             // and if it isn't attached to another hand
-            if (!attached)
-            {
-            {
-                if (hand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_Grip)) // Тоже надо заменить
-                {
-                    Rigidbody rb = GetComponent<Rigidbody>();
-                    if (rb.velocity.magnitude >= catchSpeedThreshold)
-                    {
-                        hand.AttachObject(gameObject, attachmentFlags, attachmentPoint);
-                        showHint = false;
-                    }
-                }
-            }
+            // if (!attached)
+            // {
+            // {
+                // if (hand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_Grip)) // Тоже надо заменить
+                // {
+                //     Rigidbody rb = GetComponent<Rigidbody>();
+                //     if (rb.velocity.magnitude >= catchSpeedThreshold)
+                //     {
+                //         hand.AttachObject(gameObject, attachmentFlags, attachmentPoint);
+                //         showHint = false;
+                //     }
+                // }
+            // }
 
-            if (showHint)
-            {
-                ControllerButtonHints.ShowButtonHint(hand, Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
-            }
+            // if (showHint)
+            // {
+            //     ControllerButtonHints.ShowButtonHint(hand, Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
+            // }
         }
 
 
         //-------------------------------------------------
-        private void OnHandHoverEnd(Hand hand)
-        {
-            ControllerButtonHints.HideButtonHint(hand, Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
-        }
+        // private void OnHandHoverEnd(Hand hand)
+        // {
+        //     ControllerButtonHints.HideButtonHint(hand, Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
+        // }
 
 
         //-------------------------------------------------
-        private void HandHoverUpdate(Hand hand)
-        {
-            //Тут хватаем объект
-            if (hand.controller.GetPressDown((EVRButtonId) Valve.VR.EVRButtonId.k_EButton_Grip))
-            {
-                if (gameObject.GetComponent<Collider>().isTrigger) return; // ДЗ
+        // private void HandHoverUpdate(Hand hand)
+        // {
+        //     //Тут хватаем объект
+        //     if (hand.controller.GetPressDown((EVRButtonId) Valve.VR.EVRButtonId.k_EButton_Grip))
+        //     {
+        //         if (gameObject.GetComponent<Collider>().isTrigger) return; // ДЗ
+        //
+        //         hand.AttachObject(gameObject, attachmentFlags, attachmentPoint);
+        //         ControllerButtonHints.HideButtonHint(hand, Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
+        //     }
+        // }
 
-                hand.AttachObject(gameObject, attachmentFlags, attachmentPoint);
-                ControllerButtonHints.HideButtonHint(hand, Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
-            }
-        }
+        // private void HandHoverUpdate(Hand hand)
+        // {
+        //     if (hand.GetStandardInteractionButtonDown() || ((hand.controller != null) &&
+        //                                                     hand.controller.GetPressDown(Valve.VR.EVRButtonId
+        //                                                         .k_EButton_Grip)))
+        //     {
+        //         if (hand.currentAttachedObject != gameObject)
+        //         {
+        //             // Call this to continue receiving HandHoverUpdate messages,
+        //             // and prevent the hand from hovering over anything else
+        //             hand.HoverLock(GetComponent<Interactable>());
+        //
+        //             // Attach this object to the hand
+        //             hand.AttachObject(gameObject, attachmentFlags);
+        //         }
+        //         else
+        //         {
+        //             // Detach this object from the hand
+        //             hand.DetachObject(gameObject);
+        //
+        //             // Call this to undo HoverLock
+        //             hand.HoverUnlock(GetComponent<Interactable>());
+        //         }
+        //     }
+        // }
 
-        private void HandHoverUpdate(Hand hand)
-        {
-            if (hand.GetStandardInteractionButtonDown() || ((hand.controller != null) &&
-                                                            hand.controller.GetPressDown(Valve.VR.EVRButtonId
-                                                                .k_EButton_Grip)))
-            {
-                if (hand.currentAttachedObject != gameObject)
-                {
-                    // Call this to continue receiving HandHoverUpdate messages,
-                    // and prevent the hand from hovering over anything else
-                    hand.HoverLock(GetComponent<Interactable>());
-
-                    // Attach this object to the hand
-                    hand.AttachObject(gameObject, attachmentFlags);
-                }
-                else
-                {
-                    // Detach this object from the hand
-                    hand.DetachObject(gameObject);
-
-                    // Call this to undo HoverLock
-                    hand.HoverUnlock(GetComponent<Interactable>());
-                }
-            }
-        }
-
-        private void OnAttachedToHand(Hand hand)
-        {
-            attached = true;
-
-            attachedHand = hand;
-
-            onPickUp.Invoke();
-
-            hand.HoverLock(null);
-
-            Rigidbody rb = GetComponent<Rigidbody>();
-            rb.isKinematic = true;
-            rb.interpolation = RigidbodyInterpolation.None;
-
-            if (hand.controller == null)
-            {
-                velocityEstimator.BeginEstimatingVelocity();
-            }
-
-            attachTime = Time.time;
-            attachPosition = transform.position;
-            attachRotation = transform.rotation;
-
-            if (attachEaseIn)
-            {
-                attachEaseInTransform = hand.transform;
-                if (!Util.IsNullOrEmpty(attachEaseInAttachmentNames))
-                {
-                    float smallestAngle = float.MaxValue;
-                    for (int i = 0; i < attachEaseInAttachmentNames.Length; i++)
-                    {
-                        Transform t = hand.GetAttachmentTransform(attachEaseInAttachmentNames[i]);
-                        float angle = Quaternion.Angle(t.rotation, attachRotation);
-                        if (angle < smallestAngle)
-                        {
-                            attachEaseInTransform = t;
-                            smallestAngle = angle;
-                        }
-                    }
-                }
-            }
-
-            snapAttachEaseInCompleted = false;
-        }
-
-
-        //-------------------------------------------------
-        private void OnDetachedFromHand(Hand hand)
-        {
-            attached = false;
-
-            attachedHand = null;
-
-            onDetachFromHand.Invoke();
-
-            hand.HoverUnlock(null);
-
-            Rigidbody rb = GetComponent<Rigidbody>();
-            rb.isKinematic = false;
-            rb.interpolation = RigidbodyInterpolation.Interpolate;
-
-            Vector3 position = Vector3.zero;
-            Vector3 velocity = Vector3.zero;
-            Vector3 angularVelocity = Vector3.zero;
-            if (hand.controller == null)
-            {
-                velocityEstimator.FinishEstimatingVelocity();
-                velocity = velocityEstimator.GetVelocityEstimate();
-                angularVelocity = velocityEstimator.GetAngularVelocityEstimate();
-                position = velocityEstimator.transform.position;
-            }
-            else
-            {
-                velocity = Player.instance.trackingOriginTransform.TransformVector(hand.controller.velocity);
-                angularVelocity =
-                    Player.instance.trackingOriginTransform.TransformVector(hand.controller.angularVelocity);
-                position = hand.transform.position;
-            }
-
-            Vector3 r = transform.TransformPoint(rb.centerOfMass) - position;
-            rb.velocity = velocity + Vector3.Cross(angularVelocity, r);
-            rb.angularVelocity = angularVelocity;
-
-            // Make the object travel at the release velocity for the amount
-            // of time it will take until the next fixed update, at which
-            // point Unity physics will take over
-            float timeUntilFixedUpdate = (Time.fixedDeltaTime + Time.fixedTime) - Time.time;
-            transform.position += timeUntilFixedUpdate * velocity;
-            float angle = Mathf.Rad2Deg * angularVelocity.magnitude;
-            Vector3 axis = angularVelocity.normalized;
-            transform.rotation *= Quaternion.AngleAxis(angle * timeUntilFixedUpdate, axis);
-        }
+        // private void OnAttachedToHand(Hand hand)
+        // {
+        //     attached = true;
+        //
+        //     attachedHand = hand;
+        //
+        //     onPickUp.Invoke();
+        //
+        //     hand.HoverLock(null);
+        //
+        //     Rigidbody rb = GetComponent<Rigidbody>();
+        //     rb.isKinematic = true;
+        //     rb.interpolation = RigidbodyInterpolation.None;
+        //
+        //     if (hand.controller == null)
+        //     {
+        //         velocityEstimator.BeginEstimatingVelocity();
+        //     }
+        //
+        //     attachTime = Time.time;
+        //     attachPosition = transform.position;
+        //     attachRotation = transform.rotation;
+        //
+        //     if (attachEaseIn)
+        //     {
+        //         attachEaseInTransform = hand.transform;
+        //         if (!Util.IsNullOrEmpty(attachEaseInAttachmentNames))
+        //         {
+        //             float smallestAngle = float.MaxValue;
+        //             for (int i = 0; i < attachEaseInAttachmentNames.Length; i++)
+        //             {
+        //                 Transform t = hand.GetAttachmentTransform(attachEaseInAttachmentNames[i]);
+        //                 float angle = Quaternion.Angle(t.rotation, attachRotation);
+        //                 if (angle < smallestAngle)
+        //                 {
+        //                     attachEaseInTransform = t;
+        //                     smallestAngle = angle;
+        //                 }
+        //             }
+        //         }
+        //     }
+        //
+        //     snapAttachEaseInCompleted = false;
+        // }
 
 
         //-------------------------------------------------
-        private void HandAttachedUpdate(Hand hand)
-        {
-            //Нажатие для отжатия на Gripp
-            // if (attached && hand.GetStandardInteractionButton())
-            if (hand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_Grip))
-            {
-                // Detach ourselves late in the frame.
-                // This is so that any vehicles the player is attached to
-                // have a chance to finish updating themselves.
-                // If we detach now, our position could be behind what it
-                // will be at the end of the frame, and the object may appear
-                // to teleport behind the hand when the player releases it.
-                StartCoroutine(LateDetach(hand));
-            }
+        // private void OnDetachedFromHand(Hand hand)
+        // {
+        //     attached = false;
+        //
+        //     attachedHand = null;
+        //
+        //     onDetachFromHand.Invoke();
+        //
+        //     hand.HoverUnlock(null);
+        //
+        //     Rigidbody rb = GetComponent<Rigidbody>();
+        //     rb.isKinematic = false;
+        //     rb.interpolation = RigidbodyInterpolation.Interpolate;
+        //
+        //     Vector3 position = Vector3.zero;
+        //     Vector3 velocity = Vector3.zero;
+        //     Vector3 angularVelocity = Vector3.zero;
+            // if (hand.controller == null)
+            // {
+            //     velocityEstimator.FinishEstimatingVelocity();
+            //     velocity = velocityEstimator.GetVelocityEstimate();
+            //     angularVelocity = velocityEstimator.GetAngularVelocityEstimate();
+            //     position = velocityEstimator.transform.position;
+            // }
+            // else
+            // {
+            //     velocity = Player.instance.trackingOriginTransform.TransformVector(hand.controller.velocity);
+            //     angularVelocity =
+            //         Player.instance.trackingOriginTransform.TransformVector(hand.controller.angularVelocity);
+            //     position = hand.transform.position;
+            // }
 
-            if (attachEaseIn)
-            {
-                float t = Util.RemapNumberClamped(Time.time, attachTime, attachTime + snapAttachEaseInTime, 0.0f, 1.0f);
-                if (t < 1.0f)
-                {
-                    t = snapAttachEaseInCurve.Evaluate(t);
-                    transform.position = Vector3.Lerp(attachPosition, attachEaseInTransform.position, t);
-                    transform.rotation = Quaternion.Lerp(attachRotation, attachEaseInTransform.rotation, t);
-                }
-                else if (!snapAttachEaseInCompleted)
-                {
-                    gameObject.SendMessage("OnThrowableAttachEaseInCompleted", hand,
-                        SendMessageOptions.DontRequireReceiver);
-                    snapAttachEaseInCompleted = true;
-                }
-            }
-        }
-
-        //-------------------------------------------------
-        private IEnumerator LateDetach(Hand hand)
-        {
-            yield return new WaitForEndOfFrame();
-
-            hand.DetachObject(gameObject, restoreOriginalParent);
-        }
-
-
-        //-------------------------------------------------
-        private void OnHandFocusAcquired(Hand hand)
-        {
-            gameObject.SetActive(true);
-            velocityEstimator.BeginEstimatingVelocity();
-        }
+        //     Vector3 r = transform.TransformPoint(rb.centerOfMass) - position;
+        //     rb.velocity = velocity + Vector3.Cross(angularVelocity, r);
+        //     rb.angularVelocity = angularVelocity;
+        //
+        //     // Make the object travel at the release velocity for the amount
+        //     // of time it will take until the next fixed update, at which
+        //     // point Unity physics will take over
+        //     float timeUntilFixedUpdate = (Time.fixedDeltaTime + Time.fixedTime) - Time.time;
+        //     transform.position += timeUntilFixedUpdate * velocity;
+        //     float angle = Mathf.Rad2Deg * angularVelocity.magnitude;
+        //     Vector3 axis = angularVelocity.normalized;
+        //     transform.rotation *= Quaternion.AngleAxis(angle * timeUntilFixedUpdate, axis);
+        // }
 
 
         //-------------------------------------------------
-        private void OnHandFocusLost(Hand hand)
-        {
-            gameObject.SetActive(false);
-            velocityEstimator.FinishEstimatingVelocity();
-        }
+        // private void HandAttachedUpdate(Hand hand)
+        // {
+        //     //Нажатие для отжатия на Gripp
+        //     if (attached && hand.GetStandardInteractionButton())
+        //     if (hand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_Grip))
+        //     {
+        //         // Detach ourselves late in the frame.
+        //         // This is so that any vehicles the player is attached to
+        //         // have a chance to finish updating themselves.
+        //         // If we detach now, our position could be behind what it
+        //         // will be at the end of the frame, and the object may appear
+        //         // to teleport behind the hand when the player releases it.
+        //         StartCoroutine(LateDetach(hand));
+        //     }
+        //
+        //     if (attachEaseIn)
+        //     {
+        //         float t = Util.RemapNumberClamped(Time.time, attachTime, attachTime + snapAttachEaseInTime, 0.0f, 1.0f);
+        //         if (t < 1.0f)
+        //         {
+        //             t = snapAttachEaseInCurve.Evaluate(t);
+        //             transform.position = Vector3.Lerp(attachPosition, attachEaseInTransform.position, t);
+        //             transform.rotation = Quaternion.Lerp(attachRotation, attachEaseInTransform.rotation, t);
+        //         }
+        //         else if (!snapAttachEaseInCompleted)
+        //         {
+        //             gameObject.SendMessage("OnThrowableAttachEaseInCompleted", hand,
+        //                 SendMessageOptions.DontRequireReceiver);
+        //             snapAttachEaseInCompleted = true;
+        //         }
+        //     }
+        // }
+        //
+        // //-------------------------------------------------
+        // private IEnumerator LateDetach(Hand hand)
+        // {
+        //     yield return new WaitForEndOfFrame();
+        //
+        //     hand.DetachObject(gameObject, restoreOriginalParent);
+        // }
+        //
+        //
+        // //-------------------------------------------------
+        // private void OnHandFocusAcquired(Hand hand)
+        // {
+        //     gameObject.SetActive(true);
+        //     velocityEstimator.BeginEstimatingVelocity();
+        // }
+
+
+        //-------------------------------------------------
+        // private void OnHandFocusLost(Hand hand)
+        // {
+        //     gameObject.SetActive(false);
+        //     velocityEstimator.FinishEstimatingVelocity();
+        // }
     }
 
     public struct WeaponType
@@ -300,24 +300,5 @@ namespace Code.Shooter
             pistol,
             rifle
         };
-    }
-
-    public class Magazine : MonoBehaviour
-    {
-        public WeaponType.magazType typeOfMagazine = WeaponType.magazType.pistol;
-        public int ammo = 30;
-
-        [HideInInspector] public bool isOpen = true;
-        [HideInInspector] public Rigidbody MyRg;
-        [HideInInspector] public Collider myCol;
-        [HideInInspector] public GameObject Bullet; // ссылка на бутофорную пулю
-
-        private void Start()
-        {
-            MyRg = GetComponent<Rigidbody>();
-            myCol = GetComponent<Collider>();
-
-            if (transform.GetChild(0)) Bullet = transform.GetChild(0).gameObject;
-        }
     }
 }

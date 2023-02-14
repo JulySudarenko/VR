@@ -24,15 +24,15 @@ namespace GeekBrains
 
         private void HandAttachedUpdate(Hand hand)
         {
-            if (hand.controller.GetPress(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger))
-            {
-                Fire();
-            }
-
-            if (hand.controller.GetPress(Valve.VR.EVRButtonId.k_EButton_ApplicationMenu))
-            {
-                magSocket.Release();
-            }
+            // if (hand.controller.GetPress(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger))
+            // {
+            //     Fire();
+            // }
+            //
+            // if (hand.controller.GetPress(Valve.VR.EVRButtonId.k_EButton_ApplicationMenu))
+            // {
+            //     magSocket.Release();
+            // }
         }
 
         public override void Fire()

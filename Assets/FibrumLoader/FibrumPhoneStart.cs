@@ -13,7 +13,7 @@ public class FibrumPhoneStart : MonoBehaviour {
 		timeToLoadScene=10f;
 		Invoke ("ReturnTimeScale",timeToLoadScene-3f);
 		gds = GameObject.FindObjectOfType<GameDisplayScript>();
-		Screen.orientation = ScreenOrientation.Landscape;
+		Screen.orientation = ScreenOrientation.LandscapeLeft; //.Landscape;
 		#if UNITY_ANDROID && !UNITY_EDITOR
 		FibrumController.Init();
 		#endif

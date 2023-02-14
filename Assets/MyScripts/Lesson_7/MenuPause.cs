@@ -1,21 +1,21 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.EventSystems;
-using UnityStandardAssets.Characters.FirstPerson;
+//using UnityStandardAssets.Characters.FirstPerson;
 
 namespace Helper.Lesson_7
 {
 	public class MenuPause : BaseMenu
 	{
-		private FirstPersonController _firstPersonController;
+		//private FirstPersonController _firstPersonController;
 
-		private FirstPersonController FirstPersonController
-		{
-			get
-			{
-				return _firstPersonController ?? (_firstPersonController = FindObjectOfType<FirstPersonController>());
-			}
-		}
+		// private FirstPersonController FirstPersonController
+		// {
+		// 	get
+		// 	{
+		// 		return _firstPersonController ?? (_firstPersonController = FindObjectOfType<FirstPersonController>());
+		// 	}
+		// }
 
 		private AudioMixerSnapshot _paused;
 
@@ -51,7 +51,7 @@ namespace Helper.Lesson_7
 			Clear(_elementsOfInterface);
 			Interface.InterfaceResources.MainPanel.gameObject.SetActive(false);
 			Time.timeScale = 1;
-			FirstPersonController.enabled = true;
+			//FirstPersonController.enabled = true;
 			Cursor.lockState = CursorLockMode.Locked;
 			Cursor.visible = false;
 			IsShow = false;
@@ -65,7 +65,7 @@ namespace Helper.Lesson_7
 			Interface.InterfaceResources.MainPanel.gameObject.SetActive(true);
 			Time.timeScale = 0;
 			CreateMenu(tempMenuItems);
-			FirstPersonController.enabled = false;
+			//FirstPersonController.enabled = false;
 			Cursor.lockState = CursorLockMode.None;
 			Cursor.visible = true;
 			IsShow = true;

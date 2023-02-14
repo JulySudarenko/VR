@@ -65,7 +65,7 @@ namespace GeekBrains
                 mag = goMag;
 
                 MyInteractable interactable = go.GetComponent<MyInteractable>();
-                interactable.DetachFromHand();
+                //interactable.DetachFromHand();
                 interactable.onPickUp.AddListener(TakeOffObject);
                 mag.MyRg.isKinematic = true;
                 mag.isOpen = false;

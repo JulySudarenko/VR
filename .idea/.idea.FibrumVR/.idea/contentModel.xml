@@ -7,7 +7,34 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="1911" t="Include">
+          <e p="Materials" t="Include">
+            <e p="DemoScene" t="Include">
+              <e p="Materials" t="Include" />
+            </e>
+          </e>
+          <e p="Models" t="Include">
+            <e p="Low_Poly_1323.fbm" t="Include" />
+            <e p="Low_Poly_153.fbm" t="Include" />
+            <e p="Materials" t="Include" />
+            <e p="Other.fbm" t="Include" />
+          </e>
+          <e p="Prefabs" t="Include" />
+          <e p="Scenes" t="Include" />
+          <e p="Textures" t="Include">
+            <e p="Bullet" t="Include" />
+            <e p="Low_Poly_1323.fbm" t="Include" />
+            <e p="Low_Poly_153.fbm" t="Include" />
+          </e>
+        </e>
+        <e p="AK-74u" t="Include">
+          <e p="Materials" t="Include" />
+          <e p="Models" t="Include" />
+          <e p="Prefabs" t="Include" />
+          <e p="Textures" t="Include" />
+        </e>
         <e p="Code" t="Include">
+          <e p="AR" t="Include" />
           <e p="Assistant.cs" t="Include" />
           <e p="Config.cs" t="Include" />
           <e p="Controller" t="Include">
@@ -54,6 +81,7 @@
           <e p="Shooter" t="Include">
             <e p="Bot.cs" t="Include" />
             <e p="Gun.cs" t="Include" />
+            <e p="Magazine.cs" t="Include" />
             <e p="MyInteractable.cs" t="Include" />
             <e p="Socket.cs" t="Include" />
             <e p="VR_Bot.cs" t="Include" />
@@ -74,12 +102,33 @@
           <e p="VRCameraInspector.cs" t="Include" />
         </e>
         <e p="EgyptMonsters" t="Include">
+          <e p="Animations" t="Include">
+            <e p="Spider" t="Include" />
+          </e>
+          <e p="Animators" t="Include">
+            <e p="Spider" t="Include" />
+          </e>
           <e p="Demo" t="Include">
             <e p="DemoAssets" t="Include">
+              <e p="Materials" t="Include" />
+              <e p="Meshes" t="Include" />
               <e p="Shaders" t="Include">
                 <e p="GrassAnimate.shader" t="Include" />
               </e>
+              <e p="Textures" t="Include" />
             </e>
+          </e>
+          <e p="Effects" t="Include">
+            <e p="Spider" t="Include" />
+          </e>
+          <e p="Models" t="Include">
+            <e p="Spider" t="Include">
+              <e p="Materials" t="Include" />
+              <e p="Textures" t="Include" />
+            </e>
+          </e>
+          <e p="Prefabs" t="Include">
+            <e p="Spider" t="Include" />
           </e>
           <e p="README.txt" t="Include" />
           <e p="Scripts" t="Include">
@@ -102,16 +151,23 @@
             <e p="LensCorrection.shader" t="Include" />
             <e p="NewLensCorrection.cs" t="Include" />
           </e>
+          <e p="Materials" t="Include" />
           <e p="Mobile Transparent Vertex Color.shader" t="Include" />
           <e p="SetupUI" t="Include">
             <e p="DisplayModePanelScript.cs" t="Include" />
             <e p="FibUIAppearScript.cs" t="Include" />
+            <e p="PlaneExplosion" t="Include" />
+          </e>
+          <e p="Textures" t="Include">
+            <e p="Materials" t="Include" />
           </e>
           <e p="UIpointer" t="Include">
+            <e p="Materials" t="Include" />
             <e p="VR_UIpointer.cs" t="Include" />
           </e>
           <e p="VR_GUI" t="Include">
             <e p="MaskedCutOutTex.shader" t="Include" />
+            <e p="Materials" t="Include" />
             <e p="VR_canvas.cs" t="Include" />
             <e p="VR_canvasUIcontroller.cs" t="Include" />
             <e p="VRInputModule.cs" t="Include" />
@@ -124,6 +180,8 @@
         <e p="FibrumLoader" t="Include">
           <e p="FibrumPhoneStart.cs" t="Include" />
           <e p="GameDisplayScript.cs" t="Include" />
+          <e p="LoaderAnim" t="Include" />
+          <e p="Materials" t="Include" />
           <e p="SceneAnims" t="Include">
             <e p="Main_Camera_GameDisplayScript_t.cs" t="Include" />
             <e p="Main_Camera_GameDisplayScript_texT.cs" t="Include" />
@@ -132,6 +190,22 @@
             <e p="phone_Renderer_enabled.cs" t="Include" />
             <e p="phone_Transform_localPosition.cs" t="Include" />
             <e p="phone_Transform_localRotation.cs" t="Include" />
+          </e>
+          <e p="Smartphone" t="Include">
+            <e p="Materials" t="Include" />
+          </e>
+        </e>
+        <e p="Gizmos" t="Include">
+          <e p="Editor Default Resources" t="Include">
+            <e p="Anima2D" t="Include" />
+          </e>
+          <e p="GameReadyProps" t="Include">
+            <e p="Materials" t="Include" />
+            <e p="Meshes" t="Include">
+              <e p="colliders" t="Include" />
+            </e>
+            <e p="Prefabs" t="Include" />
+            <e p="Textures" t="Include" />
           </e>
         </e>
         <e p="HTC.UnityPlugin" t="Include">
@@ -274,6 +348,8 @@
           <e p="ViveInputUtility" t="Include">
             <e p="changelog.txt" t="Include" />
             <e p="Examples" t="Include">
+              <e p="0.Tutorial" t="Include" />
+              <e p="1.UGUI" t="Include" />
               <e p="10.ControllerTooltips" t="Include">
                 <e p="ModeManager.cs" t="Include" />
                 <e p="SelectColorUIController.cs" t="Include" />
@@ -284,17 +360,24 @@
                   <e p="DropImage.cs" t="Include" />
                   <e p="DropObject.cs" t="Include" />
                 </e>
+                <e p="Sprites" t="Include" />
               </e>
               <e p="3.3DDrag" t="Include">
+                <e p="Materials" t="Include" />
+                <e p="Models" t="Include">
+                  <e p="Materials" t="Include" />
+                </e>
                 <e p="Scripts" t="Include">
                   <e p="Draggable.cs" t="Include" />
                   <e p="PlayGroundManager.cs" t="Include" />
                 </e>
               </e>
               <e p="4.Teleport" t="Include">
+                <e p="Materials" t="Include" />
                 <e p="Scripts" t="Include">
                   <e p="ImageAlphaRaycastFilter.cs" t="Include" />
                 </e>
+                <e p="Textures" t="Include" />
               </e>
               <e p="5.ColliderEvent" t="Include">
                 <e p="Scripts" t="Include">
@@ -309,7 +392,9 @@
                   <e p="SpawnObjectOnTriggerExit.cs" t="Include" />
                 </e>
               </e>
+              <e p="7.RoleBindingExample" t="Include" />
               <e p="8.NearFieldHandInteraction" t="Include">
+                <e p="Prefabs" t="Include" />
                 <e p="Scripts" t="Include">
                   <e p="Ball.cs" t="Include" />
                   <e p="CubeSlider.cs" t="Include" />
@@ -326,13 +411,20 @@
                 </e>
               </e>
               <e p="Shared" t="Include">
+                <e p="Materials" t="Include" />
                 <e p="Scripts" t="Include">
                   <e p="CustomDeviceHeight.cs" t="Include" />
                   <e p="RendererColorChanger.cs" t="Include" />
                 </e>
               </e>
             </e>
+            <e p="Materials" t="Include" />
+            <e p="Prefabs" t="Include" />
             <e p="Resources" t="Include">
+              <e p="Animation" t="Include" />
+              <e p="Models" t="Include" />
+              <e p="Sprites" t="Include" />
+              <e p="TooltipRig" t="Include" />
               <e p="Unlit-AlphaWithFade.shader" t="Include" />
             </e>
             <e p="Scripts" t="Include">
@@ -403,6 +495,31 @@
                     <e p="VIUSteamVRLoadJsonFileBase.cs" t="Include" />
                     <e p="VIUSteamVRRenderModelEditor.cs" t="Include" />
                   </e>
+                  <e p="PartialInputBindings" t="Include">
+                    <e p="actions.json" t="Include" />
+                    <e p="bindings_holographic_controller.json" t="Include" />
+                    <e p="bindings_holographic_hmd.json" t="Include" />
+                    <e p="bindings_knuckles.json" t="Include" />
+                    <e p="bindings_knuckles_ev1.json" t="Include" />
+                    <e p="bindings_oculus_touch.json" t="Include" />
+                    <e p="bindings_rift.json" t="Include" />
+                    <e p="bindings_vive.json" t="Include" />
+                    <e p="bindings_vive_controller.json" t="Include" />
+                    <e p="bindings_vive_cosmos.json" t="Include" />
+                    <e p="bindings_vive_cosmos_controller.json" t="Include" />
+                    <e p="bindings_vive_focus3_tracker.json" t="Include" />
+                    <e p="bindings_vive_pro.json" t="Include" />
+                    <e p="bindings_vive_tracker.json" t="Include" />
+                    <e p="bindings_vive_tracker_camera.json" t="Include" />
+                    <e p="bindings_vive_tracker_chest.json" t="Include" />
+                    <e p="bindings_vive_tracker_handed.json" t="Include" />
+                    <e p="bindings_vive_tracker_keyboard.json" t="Include" />
+                    <e p="bindings_vive_tracker_left_foot.json" t="Include" />
+                    <e p="bindings_vive_tracker_left_shoulder.json" t="Include" />
+                    <e p="bindings_vive_tracker_right_foot.json" t="Include" />
+                    <e p="bindings_vive_tracker_right_shoulder.json" t="Include" />
+                    <e p="bindings_vive_tracker_waist.json" t="Include" />
+                  </e>
                   <e p="VIUSteamVRRenderModel.cs" t="Include" />
                   <e p="VIUSteamVRRenderModelLoader.cs" t="Include" />
                 </e>
@@ -456,6 +573,7 @@
               </e>
               <e p="ViveRole" t="Include">
                 <e p="BindingInterface" t="Include">
+                  <e p="BindingConfigSample" t="Include" />
                   <e p="BindingInterfaceConfigPanelController.cs" t="Include" />
                   <e p="BindingInterfaceDeviceItem.cs" t="Include" />
                   <e p="BindingInterfaceDevicePanelController.cs" t="Include" />
@@ -488,6 +606,7 @@
                 <e p="ViveRoleSetter.cs" t="Include" />
               </e>
             </e>
+            <e p="Textures" t="Include" />
           </e>
           <e p="VRModule" t="Include">
             <e p="Editor" t="Include">
@@ -537,6 +656,8 @@
             <e p="VRModuleSettings.cs" t="Include" />
           </e>
         </e>
+        <e p="Materials" t="Include" />
+        <e p="Models" t="Include" />
         <e p="MyScripts" t="Include">
           <e p="Controllers" t="Include">
             <e p="BaseController.cs" t="Include" />
@@ -646,14 +767,41 @@
             <e p="WeaponSocket.cs" t="Include" />
           </e>
         </e>
+        <e p="Particles" t="Include" />
+        <e p="PostProcessing" t="Include" />
+        <e p="Prefabs" t="Include">
+          <e p="Rocks" t="Include" />
+          <e p="Trees" t="Include" />
+        </e>
         <e p="Resources" t="Include">
+          <e p="FibrumResources" t="Include" />
           <e p="LanguageRu.xml" t="Include" />
+          <e p="LevelComponents" t="Include" />
+          <e p="Obstacle" t="Include" />
+        </e>
+        <e p="Scene" t="Include">
+          <e p="Main" t="Include" />
+          <e p="VR" t="Include">
+            <e p="Geek Shooter VR" t="Include" />
+            <e p="VR_Game" t="Include" />
+          </e>
+        </e>
+        <e p="Scene 1" t="Include">
+          <e p="Main" t="Include" />
+          <e p="VR" t="Include">
+            <e p="VR_Game" t="Include" />
+          </e>
         </e>
         <e p="Scenes" t="Include">
+          <e p="1 - DemoTracking" t="Include" />
           <e p="demoMaterials" t="Include">
+            <e p="Desktop" t="Include">
+              <e p="Materials" t="Include" />
+            </e>
             <e p="GUIuserScript.cs" t="Include" />
             <e p="JoystickSetupDemo.cs" t="Include" />
           </e>
+          <e p="MyScenes" t="Include" />
         </e>
         <e p="SteamVR" t="Include">
           <e p="Editor" t="Include">
@@ -677,6 +825,7 @@
             <e p="SteamVR_TestThrow.cs" t="Include" />
             <e p="SteamVR_TestTrackedCamera.cs" t="Include" />
           </e>
+          <e p="Icon" t="Include" />
           <e p="Input" t="Include">
             <e p="BehaviourUnityEvents" t="Include">
               <e p="SteamVR_Behaviour_BooleanEvent.cs" t="Include" />
@@ -692,6 +841,9 @@
               <e p="SteamVR_Behaviour_Vector3Event.cs" t="Include" />
             </e>
             <e p="Editor" t="Include">
+              <e p="Resources" t="Include">
+                <e p="Icons" t="Include" />
+              </e>
               <e p="SteamVR_CopyExampleInputFiles.cs" t="Include" />
               <e p="SteamVR_Input_Action_Boolean_PropertyEditor.cs" t="Include" />
               <e p="SteamVR_Input_Action_GenericPropertyEditor.cs" t="Include" />
@@ -712,6 +864,25 @@
               <e p="SteamVR_Input_LiveWindow.cs" t="Include" />
               <e p="SteamVR_Input_PostProcessBuild.cs" t="Include" />
               <e p="SteamVR_Skeleton_PoserEditor.cs" t="Include" />
+            </e>
+            <e p="ExampleJSON" t="Include">
+              <e p="actions.json" t="Include" />
+              <e p="binding_holographic_hmd.json" t="Include" />
+              <e p="binding_index_hmd.json" t="Include" />
+              <e p="binding_rift.json" t="Include" />
+              <e p="binding_vive.json" t="Include" />
+              <e p="binding_vive_cosmos.json" t="Include" />
+              <e p="binding_vive_pro.json" t="Include" />
+              <e p="binding_vive_tracker_camera.json" t="Include" />
+              <e p="bindings_holographic_controller.json" t="Include" />
+              <e p="bindings_knuckles.json" t="Include" />
+              <e p="bindings_logitech_stylus.json" t="Include" />
+              <e p="bindings_oculus_touch.json" t="Include" />
+              <e p="bindings_vive_controller.json" t="Include" />
+              <e p="bindings_vive_cosmos_controller.json" t="Include" />
+            </e>
+            <e p="Plugins" t="Include">
+              <e p="JSON.NET" t="Include" />
             </e>
             <e p="SteamVR_Action.cs" t="Include" />
             <e p="SteamVR_Action_Boolean.cs" t="Include" />
@@ -751,6 +922,9 @@
           </e>
           <e p="InteractionSystem" t="Include">
             <e p="Core" t="Include">
+              <e p="Icons" t="Include" />
+              <e p="Materials" t="Include" />
+              <e p="Prefabs" t="Include" />
               <e p="Scripts" t="Include">
                 <e p="BodyCollider.cs" t="Include" />
                 <e p="CircularDrive.cs" t="Include" />
@@ -810,14 +984,22 @@
               </e>
             </e>
             <e p="Hints" t="Include">
+              <e p="Materials" t="Include" />
+              <e p="Prefabs" t="Include" />
               <e p="Scripts" t="Include">
                 <e p="ControllerButtonHints.cs" t="Include" />
               </e>
               <e p="Shaders" t="Include">
                 <e p="ControllerButtonHints.shader" t="Include" />
               </e>
+              <e p="Textures" t="Include" />
             </e>
             <e p="Longbow" t="Include">
+              <e p="Animators" t="Include" />
+              <e p="Materials" t="Include" />
+              <e p="Models" t="Include" />
+              <e p="PhysicMaterials" t="Include" />
+              <e p="Prefabs" t="Include" />
               <e p="Scripts" t="Include">
                 <e p="ArcheryTarget.cs" t="Include" />
                 <e p="Arrow.cs" t="Include" />
@@ -832,8 +1014,13 @@
                 <e p="Longbow.cs" t="Include" />
                 <e p="SoundBowClick.cs" t="Include" />
               </e>
+              <e p="Sounds" t="Include" />
+              <e p="Textures" t="Include" />
             </e>
+            <e p="Poses" t="Include" />
             <e p="Samples" t="Include">
+              <e p="Animations" t="Include" />
+              <e p="Animators" t="Include" />
               <e p="BuggyBuddy" t="Include">
                 <e p="Audio" t="Include">
                   <e p="AmbientSound.cs" t="Include" />
@@ -844,19 +1031,36 @@
                 <e p="Materials" t="Include">
                   <e p="LightCone.shader" t="Include" />
                 </e>
+                <e p="Textures" t="Include">
+                  <e p="dusty" t="Include" />
+                </e>
                 <e p="trackCam.cs" t="Include" />
                 <e p="trackObj.cs" t="Include" />
+                <e p="UI" t="Include">
+                  <e p="BuggyUI" t="Include" />
+                </e>
                 <e p="WheelDust.cs" t="Include" />
               </e>
               <e p="Grenade" t="Include">
                 <e p="Grenade.cs" t="Include" />
+                <e p="Materials" t="Include" />
               </e>
+              <e p="Interactions_Example" t="Include" />
               <e p="JoeJeff" t="Include">
+                <e p="Animation" t="Include" />
+                <e p="Animator" t="Include" />
                 <e p="JoeJeff.cs" t="Include" />
                 <e p="JoeJeffController.cs" t="Include" />
                 <e p="JoeJeffGestures.cs" t="Include" />
+                <e p="Materials" t="Include" />
                 <e p="ProceduralHats.cs" t="Include" />
+                <e p="Textures" t="Include" />
               </e>
+              <e p="Materials" t="Include" />
+              <e p="Models" t="Include">
+                <e p="Materials" t="Include" />
+              </e>
+              <e p="Prefabs" t="Include" />
               <e p="Scripts" t="Include">
                 <e p="ButtonEffect.cs" t="Include" />
                 <e p="ButtonExample.cs" t="Include" />
@@ -873,14 +1077,22 @@
                 <e p="URPMaterialSwitcher.cs" t="Include" />
               </e>
               <e p="Squishy" t="Include">
+                <e p="Materials" t="Include" />
                 <e p="SquishyDeform.shader" t="Include" />
                 <e p="SquishyToy.cs" t="Include" />
+                <e p="Textures" t="Include" />
               </e>
+              <e p="Textures" t="Include" />
             </e>
             <e p="SnapTurn" t="Include">
+              <e p="Materials" t="Include" />
               <e p="SnapTurn.cs" t="Include" />
             </e>
             <e p="Teleport" t="Include">
+              <e p="Materials" t="Include" />
+              <e p="Materials URP" t="Include" />
+              <e p="Models" t="Include" />
+              <e p="Prefabs" t="Include" />
               <e p="Scripts" t="Include">
                 <e p="AllowTeleportWhileAttachedToHand.cs" t="Include" />
                 <e p="ChaperoneInfo.cs" t="Include" />
@@ -896,12 +1108,22 @@
                 <e p="HighlighGlobal.shader" t="Include" />
                 <e p="Highlight.shader" t="Include" />
               </e>
+              <e p="Sounds" t="Include" />
+              <e p="Textures" t="Include" />
             </e>
           </e>
           <e p="link.xml" t="Include" />
+          <e p="Materials" t="Include" />
+          <e p="Models" t="Include">
+            <e p="Materials" t="Include" />
+          </e>
+          <e p="OpenVRUnityXRPackage" t="Include">
+            <e p="Editor" t="Include" />
+          </e>
           <e p="Plugins" t="Include">
             <e p="openvr_api.cs" t="Include" />
           </e>
+          <e p="Prefabs" t="Include" />
           <e p="README.txt" t="Include" />
           <e p="Resources" t="Include">
             <e p="SteamVR_AlphaOut.shader" t="Include" />
@@ -940,6 +1162,7 @@
             <e p="SteamVR_Utils.cs" t="Include" />
           </e>
           <e p="SteamVR.asmdef" t="Include" />
+          <e p="Textures" t="Include" />
           <e p="WindowsHelper" t="Include">
             <e p="SteamVR_Windows_Editor_Helper.cs" t="Include" />
             <e p="SteamVR_Windows_EditorHelper.asmdef" t="Include" />
@@ -958,8 +1181,50 @@
           <e p="SteamVR_Input_ActionSets.cs" t="Include" />
           <e p="SteamVR_Input_Initialization.cs" t="Include" />
         </e>
+        <e p="SteamVR_Resources" t="Include">
+          <e p="Resources" t="Include" />
+        </e>
+        <e p="StreamingAssets" t="Include">
+          <e p="SteamVR" t="Include">
+            <e p="actions.json" t="Include" />
+            <e p="binding_holographic_hmd.json" t="Include" />
+            <e p="binding_index_hmd.json" t="Include" />
+            <e p="binding_rift.json" t="Include" />
+            <e p="binding_vive.json" t="Include" />
+            <e p="binding_vive_cosmos.json" t="Include" />
+            <e p="binding_vive_pro.json" t="Include" />
+            <e p="binding_vive_tracker_camera.json" t="Include" />
+            <e p="bindings_holographic_controller.json" t="Include" />
+            <e p="bindings_knuckles.json" t="Include" />
+            <e p="bindings_knuckles_ev1.json" t="Include" />
+            <e p="bindings_logitech_stylus.json" t="Include" />
+            <e p="bindings_oculus_touch.json" t="Include" />
+            <e p="bindings_vive_controller.json" t="Include" />
+            <e p="bindings_vive_cosmos_controller.json" t="Include" />
+            <e p="bindings_vive_focus3_tracker.json" t="Include" />
+            <e p="bindings_vive_tracker.json" t="Include" />
+            <e p="bindings_vive_tracker_chest.json" t="Include" />
+            <e p="bindings_vive_tracker_handed.json" t="Include" />
+            <e p="bindings_vive_tracker_keyboard.json" t="Include" />
+            <e p="bindings_vive_tracker_left_foot.json" t="Include" />
+            <e p="bindings_vive_tracker_left_shoulder.json" t="Include" />
+            <e p="bindings_vive_tracker_right_foot.json" t="Include" />
+            <e p="bindings_vive_tracker_right_shoulder.json" t="Include" />
+            <e p="bindings_vive_tracker_waist.json" t="Include" />
+          </e>
+        </e>
         <e p="SVR" t="Include">
           <e p="Demos" t="Include">
+            <e p="Animations" t="Include" />
+            <e p="Images" t="Include" />
+            <e p="Materials" t="Include" />
+            <e p="Models" t="Include">
+              <e p="Materials" t="Include" />
+            </e>
+            <e p="Resources" t="Include">
+              <e p="UI" t="Include" />
+            </e>
+            <e p="Scenes" t="Include" />
             <e p="Scripts" t="Include">
               <e p="HideHandController.cs" t="Include" />
               <e p="RandomColor.cs" t="Include" />
@@ -967,7 +1232,9 @@
             <e p="Shaders" t="Include">
               <e p="Outline.shader" t="Include" />
             </e>
+            <e p="UI" t="Include" />
           </e>
+          <e p="DLLs" t="Include" />
           <e p="Photon Unity Networking" t="Include">
             <e p="Editor" t="Include">
               <e p="NetworkLoadSceneEditor.cs" t="Include" />
@@ -988,12 +1255,22 @@
             </e>
           </e>
           <e p="SteamVR" t="Include">
+            <e p="Resources" t="Include" />
             <e p="Scripts" t="Include">
               <e p="InteractableCustom.cs" t="Include" />
               <e p="SteamVR_Menu.cs" t="Include" />
               <e p="SteamVRTeleportManager.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="Textures" t="Include">
+          <e p="bush01_Textures" t="Include" />
+          <e p="Mossy_Rock" t="Include" />
+          <e p="tree03_Textures" t="Include" />
+        </e>
+        <e p="XR" t="Include">
+          <e p="Loaders" t="Include" />
+          <e p="Settings" t="Include" />
         </e>
       </e>
       <e p="FibrumVR.sln" t="IncludeFlat" />

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
-using UnityStandardAssets.Characters.FirstPerson;
+//using UnityStandardAssets.Characters.FirstPerson;
 
 namespace GeekBrains
 {
@@ -44,7 +44,7 @@ namespace GeekBrains
         protected virtual void Start()
 		{
 			_patrol= new Patrol();
-			Target = FindObjectOfType<FirstPersonController>().transform;		
+			//Target = FindObjectOfType<FirstPersonController>().transform;		
 
 			if (_headBot != null) _headBot.HeadShot = SetHp;
 		}

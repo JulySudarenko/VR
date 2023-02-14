@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
-using UnityStandardAssets.Characters.FirstPerson;
+//using UnityStandardAssets.Characters.FirstPerson;
 
 namespace GeekBrains
 {
 	public sealed class ObjectManager : MonoBehaviour
 	{
 		private Weapons[] _weapons = new Weapons[5];
-		private FirstPersonController _firstPersonController;
+		//private FirstPersonController _firstPersonController;
 
 		public Weapons[] Weapons
 		{
@@ -18,9 +18,9 @@ namespace GeekBrains
 
 		private void Start()
 		{
-			_firstPersonController = FindObjectOfType<FirstPersonController>();
+			//_firstPersonController = FindObjectOfType<FirstPersonController>();
 
-			if (_firstPersonController != null) _weapons = _firstPersonController.GetComponentsInChildren<Weapons>();
+			//if (_firstPersonController != null) _weapons = _firstPersonController.GetComponentsInChildren<Weapons>();
 			foreach (var weapon in _weapons)
 			{
 				if (weapon != null)

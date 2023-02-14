@@ -19,22 +19,22 @@ namespace GeekBrains
         {
             myGun = go.GetComponent<Gun>();
 
-            if (myGun.TypeOfGun == _typeOfMagazine)
-            {
-                MyInteractable interactable = go.GetComponent<MyInteractable>();
-                interactable.DetachFromHand();
-                interactable.onPickUp.AddListener(TakeOffObject);
-                myGun.GetComponent<Rigidbody>().isKinematic = true;
-
-                go.transform.SetParent(gameObject.transform);
-
-                if (smoothAttach) StartCoroutine(Attaching(go));
-                else
-                {
-                    go.transform.localRotation = Quaternion.identity;
-                    go.transform.localPosition = Vector3.zero;
-                }
-            }
+            // if (myGun.TypeOfGun == _typeOfMagazine)
+            // {
+            //     MyInteractable interactable = go.GetComponent<MyInteractable>();
+            //     interactable.DetachFromHand();
+            //     interactable.onPickUp.AddListener(TakeOffObject);
+            //     myGun.GetComponent<Rigidbody>().isKinematic = true;
+            //
+            //     go.transform.SetParent(gameObject.transform);
+            //
+            //     if (smoothAttach) StartCoroutine(Attaching(go));
+            //     else
+            //     {
+            //         go.transform.localRotation = Quaternion.identity;
+            //         go.transform.localPosition = Vector3.zero;
+            //     }
+            // }
         }
 
         protected override void TakeOffObject()
