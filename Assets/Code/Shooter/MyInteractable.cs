@@ -75,6 +75,7 @@ namespace Code.Shooter
             // and if it isn't attached to another hand
             if (!attached)
             {
+            {
                 if (hand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_Grip)) // Тоже надо заменить
                 {
                     Rigidbody rb = GetComponent<Rigidbody>();

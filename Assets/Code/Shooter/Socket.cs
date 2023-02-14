@@ -63,9 +63,9 @@ namespace Code.Shooter
             {
                 mag = goMag;
 
-                //MyInteractable interactable = go.GetComponent<MyInteractable>();
-                //interactable.DetachFromHand();
-                //interactable.onPickUp.AddListener(TakeOffObject);
+                MyInteractable interactable = go.GetComponent<MyInteractable>();
+                interactable.DetachFromHand();
+                interactable.onPickUp.AddListener(TakeOffObject);
                 mag.MyRg.isKinematic = true;
                 mag.isOpen = false;
                 mag.myCol.isTrigger = true;
@@ -83,10 +83,10 @@ namespace Code.Shooter
 
         protected virtual void TakeOffObject()
         {            
-            //mag.transform.SetParent(null);
+            mag.transform.SetParent(null);
             mag.isOpen = true;
             mag.myCol.isTrigger = false; 
-            //mag.GetComponent<MyInteractable>().onPickUp.RemoveListener(TakeOffObject);
+            mag.GetComponent<MyInteractable>().onPickUp.RemoveListener(TakeOffObject);
             _lastMagazine = mag.gameObject;
             mag = null;
         }

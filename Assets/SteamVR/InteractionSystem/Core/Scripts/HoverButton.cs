@@ -3,7 +3,7 @@
 // Purpose: Drives a linear mapping based on position between 2 positions
 //
 //=============================================================================
-using System;
+
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Events;

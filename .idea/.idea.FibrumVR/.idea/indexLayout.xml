@@ -3,6 +3,7 @@
   <component name="ContentModelUserStore">
     <attachedFolders />
     <explicitIncludes>
+      <Path>Assets</Path>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.2.16</Path>
       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.5</Path>
       <Path>Library/PackageCache/com.unity.ide.rider@1.1.4</Path>
@@ -15,6 +16,7 @@
       <Path>Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.6</Path>
       <Path>Library/PackageCache/com.unity.xr.management@3.2.16</Path>
       <Path>Library/PackageCache/com.valvesoftware.unity.openvr@a1fc9e377403-1614121125000</Path>
+      <Path>Library/PackageCache/com.valvesoftware.unity.openvr@a1fc9e377403-1673797944000</Path>
       <Path>Packages</Path>
       <Path>ProjectSettings</Path>
     </explicitIncludes>
